@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Website</title>
+    <style>
+        /* Reset default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fullscreen background banner */
+        .banner {
+            width: 100vw;
+            height: 100vh;
+            background: url('banner.jpg') ;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10%;
+        }
+
+        /* Top-right text */
+        .top-right-text {
+            font-family: 'Garamond', serif; /* Font family */
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Main content: Title & Subtext */
+        .content {
+            max-width: 500px; /* Keeps text readable */
+        }
+
+        .content h1 {
+            font-family: 'Garamond', serif; /* Font family */
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-family: 'Georgia', serif; /* Font family */
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        /* Button container (bottom-right) */
+        .button-container {
+            position: absolute;
+            bottom: 10%;
+            right: 10%;
+        }
+
+        /* Styled button */
+        .button-container a {
+            display: inline-block;
+            padding: 12px 32px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 40px; /* Large rounded corners */
+            background: transparent;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Button hover effect */
+        .button-container a:hover {
+            background: white;
+            color: black;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .banner {
+                padding-left: 5%;
+            }
+            .content h1 {
+                font-size: 36px;
+            }
+            .content p {
+                font-size: 16px;
+            }
+            .button-container {
+                bottom: 5%;
+                right: 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <!-- Top-right text -->
+        <div class="top-right-text">RCA Citydesign Shiv</div>
+
+        <!-- Main content -->
+        <div class="content">
+            <h1>Garden Narratives and Feminism De-heroizing Space</h1>
+            <p>This paper examines the narrative structures and feminist dimensions of Chinese gardens, investigating how these landscapes function as open, non-linear containers that offer women private and expressive spaces. Unlike traditional Chinese architecture, which emphasizes axial symmetry, hierarchical order, and centralized spatial organization—often mirroring the authoritarian ideology of feudal China—Chinese gardens embody decentralized spatial characteristics, characterized by fluidity, interwoven pathways, and cyclical movement.</p>
+        </div>
+
+        <!-- Bottom-right button -->
+        <div class="button-container">
+            <a href="index.html" target="_blank" style="font-family: 'Georgia', sans-serif;">More Information</a>
+        </div>
+    </div>
+
+</body>
+</html>
